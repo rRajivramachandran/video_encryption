@@ -3,3 +3,5 @@ to perform file encryption in chunks rather than as a whole, in order to allow l
 verified and played chunk by chunk rather than the video playing only after all chunks are authenticated. I used a collison
 ressitant hash function for the same(SHA 256). The file to be hashed needs to be stored in the same folder as the program 
 and a hashes.txt file is created which has the hash of each chunk of 1KB.
+
+Compile using  g++ -o test videostore.cpp -lcryptopp
